@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    
+    position: relative;
+    width: 1440px;
+    height: 720px;
+}
+.utama{
+    width: 1440px;
+    height: 720px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Konten Kanan */
+.konten-kanan{
+    position: absolute;
+    width: 520px;
+    height: 720px;
+    left: 0px;
+    top: 0px;
+    
+    background: #2482C6;
+}
+.gambar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    
+    position: absolute;
+    width: 239.64px;
+    height: 413px;
+    left: 140px;
+    top: 154px;
+}
+.gambar-atas{
+    width: 239.64px;
+    height: 270px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.gambar-bawah{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    
+    width: 225px;
+    height: 143px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+h2.bawah{
+    width: 202px;
+    height: 40px;
+    
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    
+    text-align: center; 
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+h6.bawah{
+    width: 225px;
+    height: 88px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-align: center;
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Konten Kiri */
+.konten-kiri{
+    position: absolute;
+    width: 920px;
+    height: 720px;
+    left: 520px;
+    top: 0px;
+    
+    background: #FFFFFF; 
+}
+.konten{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 45px;
+    
+    position: absolute;
+    width: 400px;
+    height: 482px;
+    left: 260px;
+    top: 119px;    
+}
+/* Kiri - Atas */
+.konten-atas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 201px;
+    height: 56px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+h2{
+    width: 197px;
+    height: 30px;
+    
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    
+    color: #2482C6;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+h6.teks-atas{
+    width: 201px;
+    height: 16px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #808080;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+/* Kiri Bawah */
+.konten-bawah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    
+    width: 400px;
+    height: 381px; 
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+/* .inputan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    
+    width: 400px;
+    height: 226px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+} */
+.input{
+    position: relative;
+    width: 400px;
+    border-bottom: 2px solid #808080;
+}
+.input input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+    color: #808080;
+}
+.input label{
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #808080;
+    transform: none;
+    pointer-events: none;
+}
+input:focus ~ label,
+input:valid ~ label{
+transform: scale(0);
+}
+.privasi{
+    width: 354px;
+    height: 16px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #808080;
+}
+.privasi label{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+
+    padding: 0px;
+    gap: 2.5px;
+    margin-left: 5px;
+
+    color: #808080;
+}
+.privasi label input{
+    margin-right: 5px;
+}
+.teks-bawah{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    
+    width: 400px;
+    height: 257px;
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+button.bawah{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 180px;
+    
+    width: 399px;
+    height: 42px;
+    
+    background: #2482C6;
+    border-radius: 30px;
+    border: 0px solid transparent;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.masuk{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #808080;
+    transform: translate(0%, 0%);
+}
+.masuk p{
+    align-items: center;
+}
+.masuk p a{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-decoration: none;
+    
+    color: #808080;
+}
+.masuk p a:hover{
+    text-decoration: underline;
+}

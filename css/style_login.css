@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    
+    position: relative;
+    width: 1440px;
+    height: 720px;
+}
+.utama{
+    width: 1440px;
+    height: 720px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Konten Kanan */
+.konten-kanan{
+    position: absolute;
+    width: 920px;
+    height: 720px;
+    left: 0px;
+    top: 0px;
+    
+    background: #FFFFFF;
+}
+.konten{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 45px;
+    
+    position: absolute;
+    width: 400.43px;
+    height: 491px;
+    left: 260px;
+    top: 115px;
+}
+
+/* Konten - Atas */
+.konten-atas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    
+    width: 400.43px;
+    height: 131px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.teks-atas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    
+    width: 298px;
+    height: 56px;
+}
+h2{
+    width: 350px;
+    height: 30px;
+    
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    
+    color: #2482C6;
+}
+h6.teks-atas{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #808080;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+button.atas{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 100px;
+    gap: 10px;
+
+    width: 400.43px;
+    height: 45px;
+
+    border: 2px solid #808080;
+    border-radius: 50px;
+    background: transparent;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 15px;
+    text-align: right;
+    color: #808080;    
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Konten - Tengah */
+.konten-tengah{
+    width: 400px;
+    height: 16px;
+}
+h3{
+    position: absolute;
+    left: 189px;
+    top: 176px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #808080;
+}
+.kiri-tengah{
+    position: absolute;
+    width: 158px;
+    height: 0px;
+    left: 0px;
+    top: 184px;
+    
+    border: 1px solid #808080;
+}
+.kanan-tengah{
+    position: absolute;
+    width: 158px;
+    height: 0px;
+    left: 242px;
+    top: 184px;
+    
+    border: 1px solid #808080;
+}
+
+/* Konten - Bawah */
+.konten-bawah{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    
+    width: 400px;
+    height: 254px;
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+/* Inputan - Input */
+.input{
+    position: relative;
+    width: 400px;
+    border-bottom: 2px solid #808080;
+}
+.input input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+    color: #808080;
+}
+.input label{
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #808080;
+    transform: none;
+    pointer-events: none;
+}
+input:focus ~ label,
+input:valid ~ label{
+transform: scale(0);
+}
+/* Kata-Sandi */
+.kata-sandi{
+    margin: -15px 0 15px ;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 400px;
+    height: 16px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    
+    color: #808080;
+}
+.kata-sandi label{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+
+    padding: 0px;
+    gap: 2.5px;
+    margin-left: 5px;
+
+    color: #808080;
+}
+.kata-sandi label input{
+    margin-right: 5px;
+}
+.kata-sandi label a {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+
+    color: #808080;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-decoration: none;
+}
+.kata-sandi label a:hover{
+    text-decoration: underline;
+}
+/* Button */
+button.bawah{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 180px;
+    
+    width: 399px;
+    height: 42px;
+    
+    background: #2482C6;
+    border-radius: 30px;
+    border: 0px solid transparent;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+/* Daftar */
+.daftar{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #808080;
+    transform: translate(50%, 0%);
+}
+.daftar p{
+    align-items: center;
+}
+.daftar p a{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-decoration: none;
+    
+    color: #808080;
+}
+.daftar p a:hover{
+    text-decoration: underline;
+}
+
+/* Konten Kiri */
+.konten-kiri{
+    position: absolute;
+    width: 520px;
+    height: 720px;
+    left: 920px;
+    top: 0px;
+    
+    background: #2482C6;
+}
+.gambar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    
+    position: absolute;
+    width: 225px;
+    height: 373px;
+    left: 147px;
+    top: 174px;    
+}
+.gambar-atas{
+    width: 204.21px;
+    height: 200px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.gambar-bawah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    
+    width: 225px;
+    height: 143px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+h2.bawah{
+    width: 202px;
+    height: 40px;
+    
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+h6.bawah{
+    width: 225px;
+    height: 88px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
